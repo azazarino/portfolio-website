@@ -1,8 +1,10 @@
 function Projects() {
     return (
-        <div className="projects-div">
-            <h1>Projects</h1>
-        </div>
+        <section>
+            <div className="projects-div">
+                <h1>Projects</h1>
+            </div>
+        </section>
     );
 }
 
