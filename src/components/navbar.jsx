@@ -9,8 +9,10 @@ function Navbar() {
             duration: 500,
             delay: 0,
             smooth: 'easeInOutQuart',
+            offset: -60,
         });
     };
+
     return (
         <div className="navbar">
             <div className="navbar-links">
