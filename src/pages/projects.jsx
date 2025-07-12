@@ -9,8 +9,9 @@ function Projects() {
             <section id="projects-section">
                 <div className="projects-div">
                     <h1>Projects</h1>
+                    <p>I have worked on many fun and exciting project both in my free time and in university. Here I include the most important projects and what they taught me.</p>
                     {projectList.map((project) => (
-                        <ProjectCards project={project} />
+                        <ProjectCards key={project.id} project={project} />
                     ))}
                 </div>
             </section>
