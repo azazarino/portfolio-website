@@ -16,7 +16,7 @@
   padding: 2rem;
   border-radius: 12px;
   position: relative;
-  max-width: 600px;
+  max-width: 900px;
   width: 90%;
 }
 
@@ -28,3 +28,4 @@
   background: none;
   cursor: pointer;
 }
+
