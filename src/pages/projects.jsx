@@ -9,12 +9,16 @@ function Projects() {
             <section id="projects-section">
                 <div className="projects-div">
                     <h1>Projects</h1>
-                    <p>I have worked on many fun and exciting project both in my free time and in university. Here I include the most important projects and what they taught me.
-                        Feel free to click on a project to get more information about it! 
+                    <p>I have worked on many fun and exciting project both in my free time and in university. Here I have included the most important projects and what they taught me.
+                        Feel free to click on a project to get more information about it!
                     </p>
-                    {projectList.map((project) => (
-                        <ProjectCards key={project.id} project={project} />
-                    ))}
+                    <div className="row">
+                        {projectList.map((project) => (
+                            <div className="column">
+                                <ProjectCards key={project.id} project={project} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
         </Element>

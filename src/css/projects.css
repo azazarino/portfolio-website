@@ -1,3 +1,14 @@
 #projects-section {
-    height: 800px;
+  height: 800px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }

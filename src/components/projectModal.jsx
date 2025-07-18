@@ -8,7 +8,6 @@ function ProjectModal({ open, children, onClose }) {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 {children}
-                <h1>hello world</h1>
             </div>
         </div>
         , document.getElementById("project-portal"))

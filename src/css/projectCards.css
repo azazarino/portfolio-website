@@ -11,9 +11,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project-card p{
+    margin: 0;
+}
+
 .project-card h4 {
     padding-top: 15px;
     font-size: 15px;
+    margin: 0;
 }
 
 .project-card:hover {
@@ -25,6 +30,11 @@
 .skills h4{
     display: flex;
     padding-left: 10px;
+}
+
+.skills ul{
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .skills li{

@@ -8,25 +8,26 @@ function ProjectCards({ project }) {
 
     return (
         <>
-            <div className="project-card" onClick={() => setIsOpen(true)}>
-                <h4>{project.title}</h4>
-                <p>{project.description}</p>
-                <div className="skills">
-                    <h4>technologies used: </h4>
-                    <ul>
-                        {project.skills.map((skill) => (
-                            <li>{skill}</li>
-                        ))}
-                    </ul>
+                <div className="project-card" onClick={() => setIsOpen(true)}>
+                    <h4>{project.title}</h4>
+                    <p>{project.description}</p>
+                    <div className="skills">
+                        <h4>technologies used: </h4>
+                        <ul>
+                            {project.skills.map((skill) => (
+                                <li>{skill}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
             {isOpen && (
                 <ProjectModal open={isOpen} onClose={() => setIsOpen(false)}>
                     <button className="close-btn" onClick={() => setIsOpen(false)}>
                         &times;
                     </button>
-                    <h1>test modal</h1>
+                    <h1>{project.title}</h1>
+                    <p>{project.full_description}</p>
                 </ProjectModal>
             )}
         </>

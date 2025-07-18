@@ -1,4 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
+import "../css/ContactForm.css"
+
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("{import.meta.env.FORM_KEY}");
@@ -10,10 +12,10 @@ function ContactForm() {
   return (
     <form className="fs-form" onSubmit={handleSubmit}>
       <div className="fs-field">
-        <label className="fs-label" htmlFor="name">
+        <label className="fs-label" htmlFor="contactName">
           Your Name
         </label>
-        <input className="fs-input" id="name" name="name" required />
+        <input className="fs-input" id="contactName" name="name" required />
       </div>
       <div className="fs-field">
         <label className="fs-label" htmlFor="email">
