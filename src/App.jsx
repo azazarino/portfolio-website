@@ -4,7 +4,6 @@ import Portfolio from './pages/portfolio'
 import Navbar from './components/navbar'
 import About from './pages/about'
 import Projects from './pages/projects'
-import ContactMe from './pages/contactMe'
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Portfolio />
         <About />
         <Projects />
-        <ContactMe />
       </main>
     </>
   )

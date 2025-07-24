@@ -4,7 +4,11 @@ export const projectList = [
     title: "TSIU03 project course",
     description: "Built an oscilloscope in VHDL that displays the left and right sound signals on a VGA screen",
     full_description: `This project involved building a simple oscilloscope that displays the left and right ADC values on a VGA screen.
-    This required low-level hardware interfacing, clock division, ADC integration, and careful timing coordination.`,
+    This required low-level hardware interfacing, clock division, ADC integration, and careful timing coordination. 
+    This was done using the DE2-115 FPGA board which included the different used models for audio and a VGA screen connection.
+    The project involved six people and was split up into three parts. Each team of two worked on each part, I was mostly responsibly for reading the the data and display it on the VGA screen.
+    I was originally planning on using a triple buffering method to display the lines clearly but because of time constraint and complication witht the zero-crossing calculation I settled with a double buffering solution.
+    I even helped the team on the other modules such as keyboard input and volume managment.`,
     skills: ["test1", "skill2"]
     },
     {
@@ -20,6 +24,7 @@ export const projectList = [
         "skills": ["more", "skills", "here"] 
     },
     {
+
         "id": 4,
         "title": "second project title",
         "description" : "another title description",

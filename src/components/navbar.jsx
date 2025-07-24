@@ -19,7 +19,7 @@ function Navbar() {
                 <button id="name" onClick={() => handleScroll('home-element')}>Azer Omar</button>
                 <button onClick={() => handleScroll('about-element')}>About</button> &nbsp;&nbsp;&nbsp;
                 <button onClick={() => handleScroll('projects-element')}>Projects</button> &nbsp;&nbsp;&nbsp;
-                <button onClick={() => handleScroll('contact-element')}>Contact Me</button>
+                <button >Contact Me</button>
             </div>
             <div className="navbar-options">
                 <button><TbSunMoon /></button>

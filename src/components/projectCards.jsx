@@ -27,7 +27,7 @@ function ProjectCards({ project }) {
                         &times;
                     </button>
                     <h1>{project.title}</h1>
-                    <p>{project.full_description}</p>
+                    <p className="fullDescription">{project.full_description}</p>
                 </ProjectModal>
             )}
         </>
