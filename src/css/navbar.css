@@ -12,6 +12,10 @@
     background-color: white;
 }
 
+.navbar-links{
+    display: flex;
+    align-items: center;
+}
 
 #name{
     margin-right: 30px;
@@ -22,3 +26,7 @@
 .navbar-options{
     margin-left: auto;
 }
+
+/* .navbar-btn:hover {
+    background: #f0f0f0;
+} */

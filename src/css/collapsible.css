@@ -1,0 +1,42 @@
+.collapsible-container {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: expand 0.3s ease;
+}
+
+.dropdown-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #333;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.dropdown-btn:hover {
+  background-color: #e0e0e0;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

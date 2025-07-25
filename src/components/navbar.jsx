@@ -1,6 +1,7 @@
 import { TbSunMoon } from "react-icons/tb";
 import "../css/navbar.css"
 import { scroller } from "react-scroll";
+import Collapsible from "./collapsible";
 
 function Navbar() {
 
@@ -19,7 +20,7 @@ function Navbar() {
                 <button id="name" onClick={() => handleScroll('home-element')}>Azer Omar</button>
                 <button onClick={() => handleScroll('about-element')}>About</button> &nbsp;&nbsp;&nbsp;
                 <button onClick={() => handleScroll('projects-element')}>Projects</button> &nbsp;&nbsp;&nbsp;
-                <button >Contact Me</button>
+                <Collapsible className={"navbar-btn"}/>
             </div>
             <div className="navbar-options">
                 <button><TbSunMoon /></button>
