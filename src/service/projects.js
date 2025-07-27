@@ -9,7 +9,9 @@ export const projectList = [
     The project involved six people and was split up into three parts. Each team of two worked on each part, I was mostly responsibly for reading the the data and display it on the VGA screen.
     I was originally planning on using a triple buffering method to display the lines clearly but because of time constraint and complication witht the zero-crossing calculation I settled with a double buffering solution.
     I even helped the team on the other modules such as keyboard input and volume managment.`,
-    skills: ["test1", "skill2"]
+    skills: ["VHDL", "Quartus software"],
+    description_summary : "Overall the project took approxiametly a month to both plan and implement everything from start to finish.", 
+    lessons_learned: ["Time planning", "Team communication", "Modelsim simulations", "Low level VHDL programming"]
     },
     {
         "id": 2,

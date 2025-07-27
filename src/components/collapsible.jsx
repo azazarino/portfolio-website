@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../css/collapsible.css"
 
 function Collapsible({ className }) {
@@ -6,8 +6,21 @@ function Collapsible({ className }) {
 
   const toggle = () => setOpen(!open);
 
+ const containerRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
-    <div className="collapsible-container">
+    <div className="collapsible-container" ref={containerRef}>
       <button className={className} onClick={toggle}>
         Contact Me
       </button>
@@ -20,11 +33,11 @@ function Collapsible({ className }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Email Me
+            azeromar2002@gmail.com
           </a>
 
           <a
-            href="/resume.pdf" // TODO <- fix this
+            href="/assets/resume.pdf"
             className="dropdown-btn"
             download
           >

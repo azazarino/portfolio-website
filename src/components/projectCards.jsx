@@ -28,6 +28,9 @@ function ProjectCards({ project }) {
                     </button>
                     <h1>{project.title}</h1>
                     <p className="fullDescription">{project.full_description}</p>
+                    <br />
+                    <br />
+                    <h4>lessons learned:</h4>
                 </ProjectModal>
             )}
         </>
