@@ -8,12 +8,15 @@ import Projects from './pages/projects'
 function App() {
   return (
     <>
-    <main className='main-content'>
-      <Navbar />
-        <Portfolio />
-        <About />
-        <Projects />
+      <main className='main-content'>
+        <div className='app' data-theme='dark'>
+          <Navbar />
+          <Portfolio />
+          <About />
+          <Projects />
+           </div >
       </main>
+   
     </>
   )
 }
