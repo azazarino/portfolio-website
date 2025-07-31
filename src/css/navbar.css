@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,21 +12,17 @@
     background-color: var(--div-color);
 }
 
-.navbar-links{
+.navbar-links {
     display: flex;
     align-items: center;
 }
 
-#name{
+#name {
     margin-right: 30px;
     border: 10px solid transparent;
     background-color: transparent;
 }
 
-.navbar-options{
+.navbar-options {
     margin-left: auto;
 }
-
-/* .navbar-btn:hover {
-    background: #f0f0f0;
-} */
