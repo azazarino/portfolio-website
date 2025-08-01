@@ -10,6 +10,8 @@
   --button-color: #f0f0f0;
   --div-color: #f6f6f6;
   --text-color: #0a0a0a;
+  --skills-color: white;
+  --card-hover: white;
   background-color: var(--background-color);
 
   font-synthesis: none;
@@ -67,6 +69,8 @@ button:focus-visible {
   --button-color: #F2613F;
   --div-color: #9B3922;
   --text-color: #EEEEEE;
+  --skills-color: #F2613F;
+  --card-hover: #F2613F;
 }
 
 

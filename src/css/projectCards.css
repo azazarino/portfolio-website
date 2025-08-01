@@ -11,7 +11,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card p{
+.project-card p {
     margin: 0;
 }
 
@@ -22,21 +22,21 @@
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  background-color: var(--background-color);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--card-hover);
 }
 
-.skills h4{
+.skills h4 {
     display: flex;
     padding-left: 10px;
 }
 
-.skills ul{
+.skills ul {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-.skills li{
+.skills li {
     text-align: left;
 }
