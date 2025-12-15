@@ -17,6 +17,7 @@
 
 .me-div p {
     display: flex;
+    text-align: left;
 }
 
 .skills-div {

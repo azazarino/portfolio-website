@@ -21,7 +21,7 @@ function ProjectCards({ project }) {
                     </div>
                 </div>
 
-            {isOpen && (
+            {/* {isOpen && (
                 <ProjectModal open={isOpen} onClose={() => setIsOpen(false)}>
                     <button className="close-btn" onClick={() => setIsOpen(false)}>
                         &times;
@@ -32,7 +32,7 @@ function ProjectCards({ project }) {
                     <br />
                     <h4>lessons learned:</h4>
                 </ProjectModal>
-            )}
+            )} */}
         </>
     )
 }

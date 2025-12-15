@@ -37,7 +37,7 @@ function Collapsible({ className }) {
           </a>
 
           <a
-            href="/assets/resume.pdf"
+            href="/assets/Resume_AzerOmar.pdf"
             className="dropdown-btn"
             download
           >

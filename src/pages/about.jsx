@@ -27,9 +27,10 @@ function About() {
                     <h1>About</h1>
                     <div className="me-div">
                         <h2>Who am i?</h2>
-                        <p>Im a 22 year old Bsc. in computer engineering who is mostly interested in embedded systems, cybersecurity and web programming.</p>
-                        <p>I have worked on many fun projects in university that taught me alot about programming which i have included further down.</p>
-                        <p>In my free time i usually try to learn new technologies, mostly applicable to embedded systems or try learning som new skills (currently reading and trying digital drawing)</p>
+                        <p>I am a 23-year-old Master’s student in Computer Science, specializing in Artificial Intelligence and Machine Learning, with strong interests in embedded systems, cybersecurity, and web development.</p>
+                        <p>Through my university studies, I have worked on a variety of projects that strengthened my programming skills and deepened my understanding of software development.
+                            A selection of these projects is presented below.</p>
+                        <p>Outside of my academic work, I actively explore new technologies, particularly those related to embedded systems and continuously develop new skills.</p>
                     </div>
                     <h2>Skills</h2>
                     <div className="skills-div">
@@ -41,6 +42,7 @@ function About() {
                     </div>
                     <div className="education-div">
                         <h2>Education</h2>
+                        <p>Msc. Computer Science aug. 2025 - present</p>
                         <p>Bsc. Computer Engineering aug. 2022 - jun. 2025</p>
                     </div>
                 </div>

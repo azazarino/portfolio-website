@@ -9,8 +9,8 @@ function Projects() {
             <section id="projects-section">
                 <div className="projects-div">
                     <h1>Projects</h1>
-                    <p>I have worked on many fun and exciting project both in my free time and in university. Here I have included the most important projects and what they taught me.
-                        Feel free to click on a project to get more information about it!
+                    <p>I have worked on a range of projects through both my academic studies and personal initiatives. 
+                        Below are selected projects that highlight my technical skills, problem-solving approach, and key lessons learned.
                     </p>
                     <div className="row">
                         {projectList.map((project) => (

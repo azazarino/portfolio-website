@@ -1,8 +1,8 @@
 export const projectList = [
   {
     id: 1,
-    title: "TSIU03 project course",
-    description: "Built an oscilloscope in VHDL that displays the left and right sound signals on a VGA screen",
+    title: "TSIU03, VHDL project course",
+    description: "Built an oscilloscope in VHDL that displays the left and right sound signals on a VGA screen.",
     full_description: `This project involved building a simple oscilloscope that displays the left and right ADC values on a VGA screen.
     This required low-level hardware interfacing, clock division, ADC integration, and careful timing coordination. 
     This was done using the DE2-115 FPGA board which included the different used models for audio and a VGA screen connection.
@@ -15,28 +15,31 @@ export const projectList = [
     },
     {
         "id": 2,
-        "title": "second project title",
-        "description" : "another title description",
-        "skills": ["more", "skills", "here"] 
+        "title": "Bachelor Thesis, FPGA based AES encryption",
+        "description" : `Implemented and compared two AES-128 on two platforms, 
+        FPGA and softcore processor. Compared speed, memory and space usage.`,
+        "skills": ["VHDL", "FPGA", "Soft core processor", "AES-128"] 
     },
     {
         "id": 3,
-        "title": "second project title",
-        "description" : "another title description",
-        "skills": ["more", "skills", "here"] 
+        "title": "TDDD97, Web programming project",
+        "description" : "Implemented a basic twitter clone with login system, tweets and user lookup in vanilla javascript, HTML and CSS.",
+        "skills": ["Javascript", "HTML", "CSS", "SQL", "Websockets"] 
     },
     {
 
         "id": 4,
-        "title": "second project title",
-        "description" : "another title description",
-        "skills": ["more", "skills", "here"] 
+        "title": "LIU Formula student, AMS engineer",
+        "description" : `Managed the critical safety system for an electrical formula student battery. 
+        Used CAN communication to monitor multiple points in the battery to ensure safe values of temperature, voltage and current sensor for current measurements.`,
+        "skills": ["CAN", "STM32", "Arduino", "Embedded programming"] 
     },
     {
         "id": 5,
-        "title": "second project title",
-        "description" : "another title description",
-        "skills": ["more", "skills", "here"] 
+        "title": "TSEA29, Microcomputer Project",
+        "description" : `Worked on a robot for warehouse environment. Implemented robot hand movement and communication between different modules.
+        Implemented a PD controller to better stabilize robot movement.`,
+        "skills": ["UART", "SPI", "PID controllers", "Arduino", "Raspberry PI"] 
     }
 
 ];

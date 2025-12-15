@@ -6,13 +6,14 @@
     border-width: 2px;
     border-style: solid;
     border-radius: 8px;
-    cursor: pointer;
+    cursor: context-menu;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card p {
     margin: 0;
+    font-size: small;
 }
 
 .project-card h4 {
