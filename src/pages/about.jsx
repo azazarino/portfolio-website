@@ -32,8 +32,8 @@ function About() {
                             A selection of these projects is presented below.</p>
                         <p>Outside of my academic work, I actively explore new technologies, particularly those related to embedded systems and continuously develop new skills.</p>
                     </div>
-                    <h2>Skills</h2>
                     <div className="skills-div">
+                        <h2>Skills</h2>
                         <ul className="skills-list">
                             {skills.map(skill => (
                                 <li key={skill.id} className="skill-item">{skill.name}</li>

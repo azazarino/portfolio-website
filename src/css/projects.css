@@ -12,3 +12,7 @@
   display: table;
   clear: both;
 }
+
+.projects-div h1{
+  font-size: 2.5em;
+}
