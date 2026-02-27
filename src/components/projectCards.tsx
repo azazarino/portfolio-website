@@ -1,8 +1,9 @@
 import "../css/projectCards.css"
-import ProjectModal from "./projectModal"
+import ProjectModal from "./projectModal.tsx"
 import { useState } from "react"
+import type {Project} from "../service/projects.ts"
 
-function ProjectCards({ project }) {
+function ProjectCards({ project} : { project: Project }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +16,7 @@ function ProjectCards({ project }) {
                         <h4>technologies used: </h4>
                         <ul>
                             {project.skills.map((skill) => (
-                                <li>{skill}</li>
+                                <li key={skill}>{skill}</li>
                             ))}
                         </ul>
                     </div>

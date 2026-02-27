@@ -1,8 +1,18 @@
 import reactDOM from "react-dom"
+import type { ReactNode } from "react";
 import "../css/projectModal.css"
 
-function ProjectModal({ open, children, onClose }) {
+type propmodalProps = {
+    open: boolean;
+    children: ReactNode;
+    onClose: () => void;
+}
+
+function ProjectModal({ open, children, onClose } : propmodalProps) {
     if (!open) return null
+
+    const portalroot = document.getElementById("project-portal");
+    if (!portalroot) return null;
 
     return reactDOM.createPortal(
         <div className="modal-overlay" onClick={onClose}>
@@ -10,7 +20,8 @@ function ProjectModal({ open, children, onClose }) {
                 {children}
             </div>
         </div>
-        , document.getElementById("project-portal"))
+        ,portalroot
+    );
 }
 
 export default ProjectModal

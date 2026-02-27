@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
-import ProjectCards from "../components/projectCards";
+import ProjectCards from "../components/projectCards.js";
 import '../css/projects.css'
-import { projectList } from "../service/projects";
+import { projectList } from "../service/projects.js";
 
 function Projects() {
     return (
@@ -14,8 +14,8 @@ function Projects() {
                     </p>
                     <div className="row">
                         {projectList.map((project) => (
-                            <div className="column">
-                                <ProjectCards key={project.id} project={project} />
+                            <div className="column" key={project.id}>
+                                <ProjectCards project={project} />
                             </div>
                         ))}
                     </div>

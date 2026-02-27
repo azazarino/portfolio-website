@@ -1,11 +1,12 @@
 import "../css/navbar.css"
 import { scroller } from "react-scroll";
-import Collapsible from "./collapsible";
-import Toggle from "./toggle";
+import Collapsible from "./collapsible.tsx";
+import Toggle from "./toggle.tsx";
+
 
 function Navbar() {
 
-    const handleScroll = (target) => {
+    const handleScroll = (target : string) => {
         scroller.scrollTo(target, {
             duration: 500,
             delay: 0,

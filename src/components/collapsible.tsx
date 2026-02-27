@@ -1,23 +1,32 @@
 import { useState, useEffect, useRef } from "react";
 import "../css/collapsible.css"
 
-function Collapsible({ className }) {
+function Collapsible({ className } : { className: string }) {
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen(!open);
 
- const containerRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (containerRef.current && !containerRef.current.contains(event.target)) {
+    if (!open) return;
+
+    function handleClickOutside(event: PointerEvent) {
+      if (
+        containerRef.current &&
+        event.target instanceof Node &&
+        !containerRef.current.contains(event.target)
+      ) {
         setOpen(false);
       }
     }
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    document.addEventListener("pointerdown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("pointerdown", handleClickOutside);
+    };
+}, [open]);
 
   return (
     <div className="collapsible-container" ref={containerRef}>

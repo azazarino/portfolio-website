@@ -1,4 +1,4 @@
-import "../css/about.css"
+import "../css/about.css";
 import { Element } from "react-scroll";
 
 function About() {
@@ -17,7 +17,8 @@ function About() {
         { id: 11, name: "SQL" },
         { id: 12, name: "Linux" },
         { id: 13, name: "Git" },
-        { id: 14, name: "GitHub" }
+        { id: 14, name: "GitHub" },
+        { id: 15, name: "Typescript" }
     ];
 
     return (
